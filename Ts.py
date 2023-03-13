@@ -17,35 +17,35 @@ st.title('Energy consumption by Company')
 st.markdown('___')
 
 # DATA OF COMPANY AEP
-df_AEP = pd.read_csv("D:/newTS/AEP_hourly.csv")
+df_AEP = pd.read_csv("newTS/AEP_hourly.csv")
 df_AEP.set_index('Datetime')
 df_AEP.Datetime = pd.to_datetime(df_AEP.Datetime)
 
 
 # DATA OF COMPANY PJME
 
-df_PJME = pd.read_csv("D:/newTS/PJME_hourly.csv")
+df_PJME = pd.read_csv("newTS/PJME_hourly.csv")
 df_PJME.set_index('Datetime')
 df_PJME.Datetime = pd.to_datetime(df_PJME.Datetime)
 
 
 # DATA OF COMPANY DAYTON
 
-df_DAYTON = pd.read_csv("D:/newTS/DAYTON_hourly.csv")
+df_DAYTON = pd.read_csv("newTS/DAYTON_hourly.csv")
 df_DAYTON.set_index('Datetime')
 df_DAYTON.Datetime = pd.to_datetime(df_DAYTON.Datetime)
 
 
 # DATA OF COMPANY PJMW
 
-df_PJMW = pd.read_csv("D:/newTS/PJMW_hourly.csv")
+df_PJMW = pd.read_csv("newTS/PJMW_hourly.csv")
 df_PJMW.set_index('Datetime')
 df_PJMW.Datetime = pd.to_datetime(df_PJMW.Datetime)
 
 
 # DATA OF COMPANY DOM
 
-df_DOM = pd.read_csv("D:/newTS/DOM_hourly.csv")
+df_DOM = pd.read_csv("newTS/DOM_hourly.csv")
 df_DOM.set_index('Datetime')
 df_DOM.Datetime = pd.to_datetime(df_DOM.Datetime)
 
